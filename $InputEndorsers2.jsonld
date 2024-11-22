@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "$InputEndorsers"
+    },
+    "motivations": {
+      "@value": "I am not a developer. I have lived through times of splendor and stability.  I have lived in a war zone and poverty. \n\nI know how this technology can provide an alternative escape route for individuals being cornered. It can be a force for good. \n\nI'm in this for the big picture and for the ideals. I understand that people can be here short-term and for the money. Yet, that is not my motivation. \n\nIf we build a parallel system, we decentralize a key component of the world. Finances. \n\nI have an enormous respect for everyone who is building Cardano and taking a risk by investing resources. \n\nMy aim is to provide a completely independent and balanced voice to the debate and decision-making. We need decentralization and independent points of view. I am one of them. "
+    },
+    "objectives": {
+      "@value": "I am in Cardano for the vision. To build a governable, yet resilient global protocol of value that is a viable alternative to individuals around the globe. \n\nI like excellence, hence I have been in the Cardano ecosystem since 2017. \n\nCardano offers a unique interplay of macroeconomics and finance, governance and individual empowerment, financial inclusivity and radical change. \n\nObjective: Make every ADA count. Frugality with the treasury is a must. The days of minting Cardano are over. Cardano ecosystem as a whole is now a currency user. We are no longer a currency issuer. Look it up. It is a big difference. Every ADA counts. \n\nConflicts of interest: \n\nI have never been paid by any single Cardano developer team or Catalyst-funded projects. I am not part of any DAO or Cardano project. \n\nI have been compensated by Cardano as: \n\n1. a Catalyst Community Reviewer Level 1 since Fund 2. \n2. a Catalyst Milestone Reviewer since Fund 10\n"
+    },
+    "paymentAddress": {
+      "@value": "addr1qy6d3uf26arfp6pla0wgy2nx56lt5eh6ysk95lnccdk8ygfvj5fycf94wpx3ne3fwll6g7g82paf85q8572ju9fagd2qudnsff"
+    },
+    "qualifications": {
+      "@value": "I have an open mind. \nI like to understand what is taking place and how something works. \nI know most of the players active in Cardano - although many of them do not know me. \nI have read probably a thousand Catalyst proposals since Fund 2. I have accepted and rejected hundreds of milestones from Catalyst funded teams as a Milestone Reviewer. I have insight into what is happening, the good, the bad and the beautiful. \nYes, it is a global view that is thin in some parts, but still an all encompassing picture. Cardano is a global project and a global perspective is also needed in governance, as is technical proficiency and knowledge of detail. \nI am financially unaffiliated with dev teams and do not have a conflict of interest in that sense. I am an ADA holder with the interests of the wider ecosystem and our current and future users at heart.  \nI have completed the Cardano Blockchain Certified Associate (CBCA) course. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X (Twitter) link "
+        },
+        "uri": {
+          "@value": "https://twitter.com/InputEndorsers"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "BlueSky"
+        },
+        "uri": {
+          "@value": "https://bsky.app/profile/inputendorsers.bsky.social"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Cardano Ideascale profile link"
+        },
+        "uri": {
+          "@value": "https://cardano.ideascale.com/c/profile/128509/activity"
+        }
+      }
+    ]
+  }
+}
